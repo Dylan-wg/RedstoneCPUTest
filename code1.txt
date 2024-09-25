@@ -1,0 +1,8 @@
+add 2
+output
+move 1
+load 2
+add 1
+output
+move 2
+jump

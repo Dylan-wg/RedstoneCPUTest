@@ -1,0 +1,7 @@
+load_imm
+1
+move 1
+load_imm
+1
+move 2
+load 1
