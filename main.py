@@ -11,7 +11,7 @@ reflection = {
     "ls": 0b00111,
     "load": 0b01000,
     "move": 0b01001,
-    "load_imm": 0b01010,
+    "ldim": 0b01010,
     "input": 0b01011,
     "output": 0b01100,
     "jump": 0b01101,
@@ -91,7 +91,7 @@ def main(file_name):
             else:
                 new_line = (new_line << 3) + int(depart[1])
             machine_code.append(new_line)
-            if depart[0] in ["load_imm", "jump", "jnep", "jneg", "jodd"]:
+            if depart[0] in ["ldim", "jump", "jnep", "jneg", "jodd"]:
                 double_bit = True
         elif double_bit:
             new_line = int(depart[0])

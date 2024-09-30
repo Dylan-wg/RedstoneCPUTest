@@ -6,3 +6,4 @@ add 1
 output
 move 2
 jump
+7
